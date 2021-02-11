@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+
 header{
   display: flex;
   flex-direction: column;
@@ -10,9 +11,9 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 80px;
-    min-height: 80px;
+    align-items: flex-end;
+    margin: 0 80px 15px 80px;
+    min-height: 65px;
     &__language{
       display: flex;
       flex-direction: row;
@@ -20,8 +21,8 @@ header{
     }
   }
   .header-container{
-    background: #BE1E2D;
-    min-height: calc(100vh - 160px);
+    background: #BE1E2D url("../../assets/img/header/backheader.png") -20% no-repeat;
+    min-height: calc(100vh - 140px);
     margin: 0 80px ;
     &__rope{
       position: absolute;
@@ -31,47 +32,43 @@ header{
     }
     &__circle{
       position: absolute;
-      top: 0;
+      top: -5%;
       left: 0;
     }
     &__body{
       position: absolute;
-      width: 40%;
+      width: 47%;
       left: 50%;
       transform: translate(-50%,0%);
-      bottom: -2.5%;
+      bottom: 0;
       z-index: 20;
     }
     &__o{
-      width: 110px;
       z-index: 10;
       position: absolute;
-      top: 20%;
-      left: 39%;
+      top: 14%;
+      left: 35%;
     }
     &__r{
       z-index: 10;
-      width: 110px;
       position: absolute;
-      top: 50%;
-      left: 36%;
+      top: 46.5%;
+      left: 29.5%;
     }
     &__m{
       z-index: 30;
-      width: 120px;
       position: absolute;
-      bottom: 5%;
-      left: 45%;
+      bottom: 4%;
+      left: 40%;
     }
   }
 }
 .nav{
   position: absolute;
-  top: 43%;
-  right: 20%;
+  top: 32%;
+  right: 13%;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
   line-height: 29px;
   text-align: justify;
   color: #fff;
@@ -79,8 +76,9 @@ header{
     list-style-type: none;
   }
   &__li{
-    margin: 20px 0;
+    margin: 40px 0;
     font-size: 24px;
+    text-transform: uppercase;
   }
 }
 
