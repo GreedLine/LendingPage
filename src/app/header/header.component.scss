@@ -1,69 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 
-header{
+header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   font-family: 'Montserrat', sans-serif;
-  .top-panel{
+
+  .top-panel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 80px 15px 80px;
     min-height: 65px;
-    &__language{
+
+    &__menu {
       display: flex;
       flex-direction: row;
       align-items: center;
     }
+
+    &__language {
+      border: 1px solid #BE1E2D;
+      box-sizing: border-box;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    &__eng, &__rus {
+font-size: 13px;
+      font-weight: 600;
+    }
+
+    ._inactive-language {
+      padding: 8px 2px 8px 12px;
+      color: #BE1E2D;
+    }
+
+    ._active-language {
+      color: #fff;
+      background: #BE1E2D;
+      padding: 9px 13px;
+      border-radius: 30px;
+    }
   }
-  .header-container{
+
+  .header-container {
     background: #BE1E2D url("../../assets/img/header/backheader.png") -20% no-repeat;
     min-height: calc(100vh - 140px);
-    margin: 0 80px ;
-    &__rope{
+    margin: 0 80px;
+
+    &__rope {
       position: absolute;
       top: 100%;
       right: 0;
-      transform: translate(0,-90%);
+      transform: translate(0, -90%);
     }
-    &__circle{
+
+    &__circle {
       position: absolute;
       top: -5%;
       left: 0;
     }
-    &__body{
+
+    &__body {
       position: absolute;
       width: 47%;
       left: 50%;
-      transform: translate(-50%,0%);
+      transform: translate(-50%, 0%);
       bottom: 0;
       z-index: 20;
     }
-    &__o{
+
+    &__o {
       z-index: 10;
       position: absolute;
       top: 14%;
       left: 35%;
     }
-    &__r{
+
+    &__r {
       z-index: 10;
       position: absolute;
       top: 46.5%;
       left: 29.5%;
     }
-    &__m{
+
+    &__m {
       z-index: 30;
       position: absolute;
       bottom: 4%;
       left: 40%;
     }
+    &__down{
+      position: absolute;
+      left: 7%;
+      bottom: 5%;
+    }
   }
 }
-.nav{
+
+.nav {
   position: absolute;
   top: 32%;
   right: 13%;
@@ -72,10 +114,12 @@ header{
   line-height: 29px;
   text-align: justify;
   color: #fff;
-  &__ul{
+
+  &__ul {
     list-style-type: none;
   }
-  &__li{
+
+  &__li {
     margin: 40px 0;
     font-size: 24px;
     text-transform: uppercase;
