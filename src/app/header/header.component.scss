@@ -57,7 +57,7 @@ font-size: 13px;
 
     &__rope {
       position: absolute;
-      top: 100%;
+      top: 135%;
       right: 0;
       transform: translate(0, -90%);
     }
@@ -126,7 +126,11 @@ font-size: 13px;
   }
 }
 
-
+.navigation{
+  position: absolute;
+  right: 1%;
+  top: 25%;
+}
 
 
 

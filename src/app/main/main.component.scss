@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.main{
+  margin-top: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'Montserrat', sans-serif;
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: justify;
+    max-width: 700px;
+    margin-left: 20px;
+  }
+  &__title{
+    margin: 70px 0 0 0;
+  }
+  &__information,&__foot-info{
+    margin: 10px 0 90px 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 380px;
+    text-align: left;
+  }
+  &__buttons{
+    width: 100%;
+  }
+  &__foot-info{
+    font-size: 16px;
+    margin: 0;
+  }
+  &__description, &__foot-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__foot-description{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  ._red-text{
+    color: #BE1E2D;
+  }
+  &__roob{
+    margin: 20px 20px 60px 100px;
+  }
+}
+#main__analysis{
+  background: #BE1E2D;
+  padding: 32px 86px;
+  border-radius: 90px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
