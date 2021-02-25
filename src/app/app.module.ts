@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
+import { ModalWindowComponent } from './modal-window/modal-window.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
     MainComponent,
     PartnersComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    ModalWindowComponent
   ],
   imports: [
     BrowserModule,

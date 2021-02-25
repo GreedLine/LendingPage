@@ -1,4 +1,4 @@
-<main class="main">
+<main class="main" id="main">
     <div class="main__img">
         <img src="/assets/img/main/picture.png" alt="image">
     </div>
@@ -17,11 +17,34 @@
             </div>
         </div>
         <div class="main__buttons">
-            <button id="main__analysis">Получить</button>
+            <button id="main__analysis" (click)="openForm1()">Получить</button>
             <div class="main__foot-description">
                 <div class="main__container"><img src="/assets/img/main/roob.png" alt="image" class="main__roob"></div>
                 <p class="main__foot-info">Получите <b>бесплатный анализ репутации</b> вашей компании на почту в течение 3 часов</p>
             </div>
         </div>
     </div>
+    <ul class="sidebar">
+        <a href="#header" class="sidebar__link"><li class="sidebar__li">Главная</li></a>
+        <a href="#main" class="sidebar__link"><li class="sidebar__li _sidebar__active">Кто мы?</li></a>
+        <a href="#partners" class="sidebar__link"><li class="sidebar__li">Партнёры</li></a>
+        <a href="#contacts" class="sidebar__link"><li class="sidebar__li">О нас</li></a>
+    </ul>
 </main>
+
+<div class="modal__fade" style="{{ form1 }}">
+    <div class="modal__window">
+        <button class="modal__close" (click)="closeForm1()">X</button>
+        <form action="" class="modal__form">
+            <h1 class="modal__h1">Заполните форму</h1>
+            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
+            <input type="text" placeholder="Название компании" name="nameCompany" class="modal__input">
+            <input type="text" placeholder="Сфера деятельности" name="object" class="modal__input">
+            <input type="text" placeholder="Город" name="city" class="modal__input">
+            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
+            <input type="text" placeholder="Почта" name="mail" class="modal__input">
+            <input type="submit" value="Отправить" class="modal__submit">
+        </form>
+    </div>
+</div>
+

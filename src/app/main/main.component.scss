@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.main{
+.main {
   margin-top: 110px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -22,10 +23,12 @@
     max-width: 700px;
     margin-left: 20px;
   }
-  &__title{
+
+  &__title {
     margin: 70px 0 0 0;
   }
-  &__information,&__foot-info{
+
+  &__information, &__foot-info {
     margin: 10px 0 90px 0;
     font-weight: 500;
     font-size: 20px;
@@ -33,33 +36,40 @@
     max-width: 380px;
     text-align: left;
   }
-  &__buttons{
+
+  &__buttons {
     width: 100%;
   }
-  &__foot-info{
+
+  &__foot-info {
     font-size: 16px;
     margin: 0;
   }
-  &__description, &__foot-description{
+
+  &__description, &__foot-description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
-  &__foot-description{
+
+  &__foot-description {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  ._red-text{
+
+  ._red-text {
     color: #BE1E2D;
   }
-  &__roob{
+
+  &__roob {
     margin: 20px 20px 60px 100px;
   }
 }
-#main__analysis{
+
+#main__analysis {
   background: #BE1E2D;
   padding: 32px 86px;
   border-radius: 90px;

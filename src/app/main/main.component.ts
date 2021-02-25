@@ -8,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   constructor() { }
+  isModalDialogVisible = false;
+  form1 = 'display: none';
+  openForm1(){
+    this.form1 = `display: flex`;
+  }
+  closeForm1(){
+    this.form1 = 'display: none';
+  }
 
+  public openModal() {
+    this.isModalDialogVisible = true;
+  }
+  public closeModal() {
+    this.isModalDialogVisible = false;
+  }
   ngOnInit(): void {
   }
 

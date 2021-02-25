@@ -1,4 +1,4 @@
-<div class="contacts">
+<div class="contacts" id="contacts">
     <div class="contacts__container">
         <div class="contacts__information">
             <h1 class="contacts__title">Наша сила - ваше преимущество</h1>
@@ -14,12 +14,48 @@
     </div>
     <div class="contacts__buttons">
         <div class="contacts__container">
-            <button class="contacts__button">Получить</button>
+            <button class="contacts__button" (click)="openForm2()">Получить</button>
             <p class="contacts__description">Получить коммерческое предложение уже <b>через 5 минут</b></p>
         </div>
         <div class="contacts__container">
-            <button class="contacts__button">Получить</button>
+            <button class="contacts__button" (click)="openForm1()">Получить</button>
             <p class="contacts__description _desc-right">Получить <b>бесплатный</b> анализ репутации вашей компании в течение 3 часов</p>
         </div>
+    </div>
+    <img src="/assets/img/contacts/4.png" alt="" class="contacts__4">
+    <ul class="sidebar">
+        <a href="#header" class="sidebar__link"><li class="sidebar__li">Главная</li></a>
+        <a href="#main" class="sidebar__link"><li class="sidebar__li">Кто мы?</li></a>
+        <a href="#partners" class="sidebar__link"><li class="sidebar__li">Партнёры</li></a>
+        <a href="#contacts" class="sidebar__link"><li class="sidebar__li _sidebar__active">О нас</li></a>
+    </ul>
+</div>
+
+<div class="modal__fade" style="{{ form1 }}">
+    <div class="modal__window">
+        <button class="modal__close" (click)="closeForm1()">X</button>
+        <form action="" class="modal__form">
+            <h1 class="modal__h1">Заполните форму</h1>
+            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
+            <input type="text" placeholder="Название компании" name="nameCompany" class="modal__input">
+            <input type="text" placeholder="Сфера деятельности" name="object" class="modal__input">
+            <input type="text" placeholder="Город" name="city" class="modal__input">
+            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
+            <input type="text" placeholder="Почта" name="mail" class="modal__input">
+            <input type="submit" value="Отправить" class="modal__submit">
+        </form>
+    </div>
+</div>
+
+<div class="modal__fade" style="{{ form2 }}">
+    <div class="modal__window">
+        <button class="modal__close" (click)="closeForm2()">X</button>
+        <form action="" class="modal__form">
+            <h1 class="modal__h1">Заполните форму</h1>
+            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
+            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
+            <input type="text" placeholder="Почта" name="mail" class="modal__input">
+            <input type="submit" value="Отправить" class="modal__submit">
+        </form>
     </div>
 </div>

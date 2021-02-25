@@ -3,6 +3,109 @@ html, body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 
+.sidebar {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: justify;
+  text-transform: uppercase;
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__li {
+    writing-mode: vertical-rl;
+    margin: 64px 0;
+  }
+
+  ._sidebar__active {
+    color: #BE1E2D;
+    text-decoration: underline;
+  }
+}
+
+
+.modal {
+  &__fade {
+    z-index: 50;
+    background: rgba(35, 31, 32, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  &__window {
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__h1 {
+    font-size: 20px;
+  }
+
+  &__input {
+    padding: 24px 20px;
+    text-align: center;
+    width: 300px;
+    border-radius: 40px;
+    border: 1px solid #BE1E2D;
+    font-size: 16px;
+    margin-top: 20px;
+    outline: none;
+  }
+
+  &__submit {
+    background: #BE1E2D;
+    color: #fff;
+    width: 340px;
+    padding: 24px 0;
+    border-radius: 40px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  &__close{
+    position: relative;
+    align-self: flex-end;
+    top: -40px;
+    right: -70px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

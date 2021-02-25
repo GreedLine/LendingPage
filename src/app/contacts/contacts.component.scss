@@ -8,7 +8,13 @@
   align-items: center;
   width: 100%;
   margin-top: 40px;
+  position: relative;
 
+  &__4{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+  }
   &__information {
     margin: 0 300px 0 0;
   }

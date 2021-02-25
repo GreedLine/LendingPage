@@ -1,16 +1,36 @@
-<div class="partners">
+<div class="partners" id="partners">
     <h1 class="partners__title">Ключевые партнёры:</h1>
     <div class="partners__slider">
         <div class="slider__card">
             <img src="/assets/img/partners/logo1.png" alt="">
         </div>
         <div class="slider__card">
-            <img src="/assets/img/partners/logo1.png" alt="">
+            <img src="/assets/img/partners/logo2.png" alt="">
         </div>
     </div>
     <div class="partners__send-mail">
         <p class="partners__subtitle">Получите коммерческое предложение на почту</p>
         <img src="/assets/img/partners/arrow.png" alt="" class="partners__arrow">
-        <button class="partners__button">Получить</button>
+        <button class="partners__button" (click)="openForm2()">Получить</button>
+    </div>
+    <img src="/assets/img/partners/03.png" alt="" class="partners__03">
+    <ul class="sidebar">
+        <a href="#header" class="sidebar__link"><li class="sidebar__li">Главная</li></a>
+        <a href="#main" class="sidebar__link"><li class="sidebar__li">Кто мы?</li></a>
+        <a href="#partners" class="sidebar__link"><li class="sidebar__li _sidebar__active">Партнёры</li></a>
+        <a href="#contacts" class="sidebar__link"><li class="sidebar__li">О нас</li></a>
+    </ul>
+</div>
+
+<div class="modal__fade" style="{{ form2 }}">
+    <div class="modal__window">
+        <button class="modal__close" (click)="closeForm2()">X</button>
+        <form action="" class="modal__form">
+            <h1 class="modal__h1">Заполните форму</h1>
+            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
+            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
+            <input type="text" placeholder="Почта" name="mail" class="modal__input">
+            <input type="submit" value="Отправить" class="modal__submit">
+        </form>
     </div>
 </div>
