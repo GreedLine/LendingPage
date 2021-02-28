@@ -1,5 +1,5 @@
 
-html, body{
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -97,7 +97,8 @@ html, body{
     cursor: pointer;
     font-size: 20px;
   }
-  &__close{
+
+  &__close {
     position: relative;
     align-self: flex-end;
     top: -40px;
@@ -108,4 +109,42 @@ html, body{
     outline: none;
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: 1500px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+
+}
+
+@media screen and (max-width: 650px) {
+  .modal {
+    &__h1 {
+      font-size: 30px;
+    }
+    &__input {
+      padding: 24px 20px;
+      width: 400px;
+      font-size: 26px;
+      margin-top: 20px;
+      outline: none;
+    }
+    &__submit {
+      width: 440px;
+      padding: 30px 0;
+      border-radius: 40px;
+      margin-top: 30px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-size: 28px;
+    }
+    }
+}
+
+@media screen and (max-width: 480px) {
 }

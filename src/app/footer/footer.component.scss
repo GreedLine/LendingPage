@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
 
 
-.footer{
+.footer {
   font-family: 'Montserrat', sans-serif;
   margin: 100px 0 50px 0;
   display: flex;
@@ -12,13 +12,37 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  &__icon{
+
+  &__icon {
     margin-right: 20px;
   }
-  &__p{
+
+  &__p {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
   }
+}
+
+@media screen and (max-width: 1500px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 50px;
+
+    &__p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1015px) {
+
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 480px) {
 }

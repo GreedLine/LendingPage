@@ -33,7 +33,7 @@ header {
     }
 
     &__eng, &__rus {
-font-size: 13px;
+      font-size: 13px;
       font-weight: 600;
     }
 
@@ -51,7 +51,7 @@ font-size: 13px;
   }
 
   .header-container {
-    background: #BE1E2D url("../../assets/img/header/backheader.png") -20% no-repeat;
+    background: #BE1E2D url("../../assets/img/header/backheader.png") no-repeat;
     min-height: calc(100vh - 140px);
     margin: 0 80px;
 
@@ -97,7 +97,8 @@ font-size: 13px;
       bottom: 4%;
       left: 40%;
     }
-    &__down{
+
+    &__down {
       position: absolute;
       left: 7%;
       bottom: 5%;
@@ -124,18 +125,98 @@ font-size: 13px;
     font-size: 24px;
     text-transform: uppercase;
   }
-  &__link{
+
+  &__link {
     text-decoration: none;
     color: inherit;
   }
 }
 
-.navigation{
+.navigation {
   position: absolute;
   right: 1%;
   top: 25%;
 }
 
+@media screen and (max-width: 1420px) {
+  .header {
+    &-container {
+      &__body {
+        left: 40% !important;
+      }
+
+      &__o {
+        left: 25% !important;
+      }
+
+      &__r {
+        left: 19.5% !important;
+
+      }
+
+      &__m {
+        left: 30% !important;
+      }
+
+      &__circle {
+        display: none;
+      }
+    }
+  }
+  .nav {
+    &__ul {
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 1015px) {
+
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    &-container {
+      &__body {
+        width: 70% !important;
+        left: 53% !important;
+      }
+
+      &__o {
+        width: 15%;
+        top: 55% !important;
+        left: 35% !important;
+      }
+
+      &__r {
+        width: 15%;
+        top: 70% !important;
+        left: 20% !important;
+      }
+
+      &__m {
+        width: 15%;
+        left: 35% !important;
+      }
+
+      &__circle {
+        display: none;
+      }
+
+      &__rope {
+        display: none;
+      }
+    }
+  }
+  .nav {
+    position: relative;
+    margin: 40px 0 0 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
 
 
 

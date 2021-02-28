@@ -9,19 +9,21 @@
   margin-top: 140px;
   font-family: 'Montserrat', sans-serif;
 
-  &__title{
+  &__title {
     font-weight: 800;
     font-size: 40px;
     line-height: 40px;
   }
-&__subtitle{
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 40px;
-  width: 420px;
-}
-  &__button{
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    width: 420px;
+  }
+
+  &__button {
     background: #BE1E2D;
     padding: 32px 86px;
     border-radius: 90px;
@@ -36,11 +38,14 @@
     border: none;
     cursor: pointer;
   }
-  &__arrow{
+
+  &__arrow {
     margin: 0 70px;
   }
+
   &__send-mail {
-    background: url("../../assets/img/partners/mountain.png");
+    background: url("../../assets/img/partners/mountain.png") no-repeat;
+    background-size: cover;
     padding-bottom: 700px;
     width: 100%;
     display: flex;
@@ -48,14 +53,15 @@
     justify-content: center;
     align-items: center;
   }
-  &__slider{
+
+  &__slider {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
 
-  &__03{
+  &__03 {
     position: absolute;
     left: 5%;
     top: 5%;
@@ -74,4 +80,48 @@
   justify-content: center;
   align-items: center;
   margin: 80px 20px;
+}
+
+@media screen and (max-width: 1500px) {
+  .partners {
+    &__send-mail {
+      justify-content: space-around;
+      padding-bottom: 500px;
+    }
+
+    &__slider {
+      flex-direction: column;
+    }
+
+    .slider__card {
+      margin: 20px 0;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .partners {
+    &__send-mail {
+      flex-direction: column;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+
+    &__button {
+      font-size: 24px;
+      padding: 40px 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+}
+
+@media screen and (max-width: 480px) {
 }

@@ -84,3 +84,52 @@
   border: none;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1800px) {
+  .main {
+    justify-content: space-between;
+
+    &__content {
+      margin: 0 140px 0 20px;
+    }
+
+    &__img {
+      width: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    justify-content: center;
+
+    &__content {
+      margin: 0 40px;
+    }
+
+    &__img {
+      display: none
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main {
+    &__title {
+      font-size: 36px;
+      text-align: left;
+    }
+
+    &__information {
+      font-size: 28px;
+    }
+
+    &__foot-info {
+      font-size: 26px;
+    }
+
+    #main__analysis {
+      font-size: 24px;
+    }
+  }
+}
