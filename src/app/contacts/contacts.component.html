@@ -6,34 +6,45 @@
             <p class="contacts__header-desc"><b>Адрес:</b> г. Челябинск, ул. Каслинская, 32</p>
             <p class="contacts__header-desc">Работаем с <b>9.00 до 18.00</b></p>
             <div class="contacts__ul">
-                <p class="contacts__li"><img src="/assets/img/contacts/mail.png" alt="" class="contacts__li-img">rise-orm@mail.ru</p>
-                <p class="contacts__li"><img src="/assets/img/contacts/phone.png" alt="" class="contacts__li-img">Руководитель отдела продаж: +7 (996) 235-99-19</p>
+                <p class="contacts__li"><img src="/assets/img/contacts/mail.png" alt="" class="contacts__li-img">rise-orm@mail.ru
+                </p>
+                <p class="contacts__li"><img src="/assets/img/contacts/phone.png" alt="" class="contacts__li-img">Руководитель
+                    отдела продаж: +7 (996) 235-99-19</p>
             </div>
         </div>
         <img src="/assets/img/contacts/r.png" alt="" class="contacts__r">
     </div>
     <div class="contacts__buttons">
         <div class="contacts__container _container-button">
-            <button class="contacts__button" (click)="openForm2()">Получить</button>
+            <button class="contacts__button" (click)="toggleCommercialModal()">Получить</button>
             <p class="contacts__description">Получить коммерческое предложение уже <b>через 5 минут</b></p>
         </div>
         <div class="contacts__container _container-button">
-            <button class="contacts__button" (click)="openForm1()">Получить</button>
-            <p class="contacts__description _desc-right">Получить <b>бесплатный</b> анализ репутации вашей компании в течение 3 часов</p>
+            <button class="contacts__button" (click)="toggleAnalysisModal()">Получить</button>
+            <p class="contacts__description _desc-right">Получить <b>бесплатный</b> анализ репутации вашей компании в
+                течение 3 часов</p>
         </div>
     </div>
     <img src="/assets/img/contacts/4.png" alt="" class="contacts__4">
     <ul class="sidebar">
-        <a href="#header" class="sidebar__link"><li class="sidebar__li">Главная</li></a>
-        <a href="#main" class="sidebar__link"><li class="sidebar__li">Кто мы?</li></a>
-        <a href="#partners" class="sidebar__link"><li class="sidebar__li">Партнёры</li></a>
-        <a href="#contacts" class="sidebar__link"><li class="sidebar__li _sidebar__active">О нас</li></a>
+        <a href="#header" class="sidebar__link">
+            <li class="sidebar__li">Главная</li>
+        </a>
+        <a href="#main" class="sidebar__link">
+            <li class="sidebar__li">Кто мы?</li>
+        </a>
+        <a href="#partners" class="sidebar__link">
+            <li class="sidebar__li">Партнёры</li>
+        </a>
+        <a href="#contacts" class="sidebar__link">
+            <li class="sidebar__li _sidebar__active">О нас</li>
+        </a>
     </ul>
 </div>
 
-<div class="modal__fade" style="{{ form1 }}">
+<div class="modal__fade" *ngIf="form2">
     <div class="modal__window">
-        <button class="modal__close" (click)="closeForm1()">X</button>
+        <button class="modal__close" (click)="toggleAnalysisModal()">X</button>
         <form action="" class="modal__form">
             <h1 class="modal__h1">Заполните форму</h1>
             <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
@@ -47,9 +58,9 @@
     </div>
 </div>
 
-<div class="modal__fade" style="{{ form2 }}">
+<div class="modal__fade" *ngIf="form1">
     <div class="modal__window">
-        <button class="modal__close" (click)="closeForm2()">X</button>
+        <button class="modal__close" (click)="toggleCommercialModal()">X</button>
         <form action="" class="modal__form">
             <h1 class="modal__h1">Заполните форму</h1>
             <input type="text" placeholder="Ваше имя" name="name" class="modal__input">

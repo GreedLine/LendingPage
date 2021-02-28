@@ -1,29 +1,41 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+    selector: 'app-main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.scss']
 })
+
+
 export class MainComponent implements OnInit {
 
-  constructor() { }
-  isModalDialogVisible = false;
-  form1 = 'display: none';
-  openForm1(){
-    this.form1 = `display: flex`;
-  }
-  closeForm1(){
-    this.form1 = 'display: none';
-  }
+    submitted = false;
+    analysisForm = new FormGroup({
+        name: new FormControl('', [Validators.required]),
+        company: new FormControl('', [Validators.required]),
+        work: new FormControl('', [Validators.required]),
+        city: new FormControl('', [Validators.required]),
+        telephone: new FormControl('', [Validators.required,]),
+        mail: new FormControl('', [Validators.required]),
+    });
+    toggle = false;
 
-  public openModal() {
-    this.isModalDialogVisible = true;
-  }
-  public closeModal() {
-    this.isModalDialogVisible = false;
-  }
-  ngOnInit(): void {
-  }
+    constructor() {
+    }
+
+    toggleModal(): void {
+
+        this.toggle = !this.toggle;
+    }
+
+    onSubmit(): void {
+        this.submitted = true;
+        console.log('Success');
+        console.log(this.analysisForm);
+    }
+
+    ngOnInit(): void {
+    }
 
 }
