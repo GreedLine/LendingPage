@@ -85,6 +85,10 @@
     outline: none;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background: #a91927;
+    }
   }
 
   &__description {

@@ -140,36 +140,40 @@ header {
 }
 
 @media screen and (max-width: 1420px) {
-  .header {
-    &-container {
-      &__body {
-        left: 40% !important;
+  header {
+    .header {
+      &-container {
+        margin: 0 40px;
+
+        &__body {
+          left: 40%;
+        }
+
+        &__o {
+          left: 25%;
+        }
+
+        &__r {
+          left: 19.5%;
+
+        }
+
+        &__m {
+          left: 30%;
+        }
+
+        &__circle {
+          display: none;
+        }
       }
+    }
 
-      &__o {
-        left: 25% !important;
-      }
+    .nav {
+      &__ul {
 
-      &__r {
-        left: 19.5% !important;
-
-      }
-
-      &__m {
-        left: 30% !important;
-      }
-
-      &__circle {
-        display: none;
       }
     }
   }
-  .nav {
-    &__ul {
-
-    }
-  }
-
 }
 
 @media screen and (max-width: 1015px) {
@@ -177,46 +181,47 @@ header {
 }
 
 @media screen and (max-width: 650px) {
-  .header {
-    &-container {
-      &__body {
-        width: 70% !important;
-        left: 53% !important;
-      }
+  header {
+    .header {
+      &-container {
 
-      &__o {
-        width: 15%;
-        top: 55% !important;
-        left: 35% !important;
-      }
+        &__body {
+          width: 70%;
+          left: 53%;
+        }
 
-      &__r {
-        width: 15%;
-        top: 70% !important;
-        left: 20% !important;
-      }
+        &__o {
+          width: 15%;
+          top: 55%;
+          left: 35%;
+        }
 
-      &__m {
-        width: 15%;
-        left: 35% !important;
-      }
+        &__r {
+          width: 15%;
+          top: 70%;
+          left: 20%;
+        }
 
-      &__circle {
-        display: none;
-      }
+        &__m {
+          width: 15%;
+          left: 35%;
+        }
 
-      &__rope {
-        display: none;
+        &__circle {
+          display: none;
+        }
+
+        &__rope {
+          display: none;
+        }
       }
     }
-  }
-  .nav {
-    position: relative;
-    margin: 40px 0 0 60px;
-  }
-}
 
-@media screen and (max-width: 480px) {
+    .nav {
+      position: relative;
+      margin: 40px 0 0 60px;
+    }
+  }
 }
 
 

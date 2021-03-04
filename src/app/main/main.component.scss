@@ -39,6 +39,8 @@
 
   &__buttons {
     width: 100%;
+
+
   }
 
   &__foot-info {
@@ -83,6 +85,10 @@
   outline: none;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background: #a91927;
+  }
 }
 
 @media screen and (max-width: 1800px) {

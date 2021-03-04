@@ -37,6 +37,7 @@ html, body {
 
 
 .modal {
+
   &__fade {
     z-index: 50;
     background: rgba(35, 31, 32, 0.6);
@@ -49,10 +50,11 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
   }
 
   &__window {
+    font-family: 'Montserrat', sans-serif;
+
     background: #FFFFFF;
     border-radius: 5px;
     display: flex;
@@ -60,6 +62,11 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 70px 100px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 100;
   }
 
   &__form {
@@ -171,6 +178,16 @@ html, body {
       border: none;
       cursor: pointer;
       font-size: 28px;
+    }
+
+    &__warning {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    &__failed, &__succes {
+      width: 400px;
+      font-size: 22px;
     }
   }
 }

@@ -37,7 +37,12 @@
     outline: none;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background: #a91927;
+    }
   }
+
 
   &__arrow {
     margin: 0 70px;
