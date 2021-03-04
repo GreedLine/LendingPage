@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {Store} from '@ngrx/store';
 import {ModalState} from '../reducers/analysisModal/modal.reducer';
 import {AnalysisToggleAction} from '../reducers/analysisModal/modal.actions';
@@ -10,13 +11,18 @@ import {HttpClient} from '@angular/common/http';
     styleUrls: ['./modal-window.component.scss']
 })
 export class ModalWindowComponent implements OnInit {
+    isSuccess = false;
+    isFailed = false;
+    submitted = false;
+    analysisForm = new FormGroup({
+        name: new FormControl('', [Validators.required]),
+        company: new FormControl('', [Validators.required]),
+        sphere: new FormControl('', [Validators.required]),
+        city: new FormControl('', [Validators.required]),
+        phone: new FormControl('', [Validators.required]),
+        email: new FormControl('', [Validators.required]),
+    });
 
-    name: any;
-    company: any;
-    work: any;
-    city: any;
-    phone: any;
-    mail: any;
 
     constructor(private store$: Store<ModalState>, private http: HttpClient) {
     }
@@ -25,20 +31,32 @@ export class ModalWindowComponent implements OnInit {
         this.store$.dispatch(new AnalysisToggleAction());
     }
 
-    onSubmit(): void {
-        const url = 'https://httpbin.org/post';
-        this.http.post(url, {
-            name: this.name,
-            phone: this.phone,
-            mail: this.mail,
-            work: this.work,
-            city: this.city
-        }).toPromise().then((data: any) => {
-            console.log(data);
-            this.store$.dispatch(new AnalysisToggleAction());
-        });
+    async onSubmit(): Promise<void> {
+        this.submitted = true;
+        const url = 'http://localhost:5050/api/message/analysis';
+        if (this.analysisForm.controls.name.errors ||
+            this.analysisForm.controls.company.errors ||
+            this.analysisForm.controls.sphere.errors ||
+            this.analysisForm.controls.city.errors ||
+            this.analysisForm.controls.phone.errors ||
+            this.analysisForm.controls.email.errors
+        ) {
+        } else {
+            await this.http.post(url, this.analysisForm.value, {responseType: 'text'}).toPromise()
+                .then((res: any) => {
+                    this.isSuccess = true;
+                    console.log(res);
+                    setTimeout(() => {
+                        this.store$.dispatch(new AnalysisToggleAction());
+                        this.isSuccess = false;
+                    }, 2500);
+                }).catch((err: any) => {
+                    console.log('This is Error:');
+                    this.isFailed = true;
+                    console.log(err);
+                });
+        }
     }
-
 
     ngOnInit(): void {
     }

@@ -109,6 +109,32 @@ html, body {
     outline: none;
     cursor: pointer;
   }
+
+  &__success {
+    position: relative;
+    top: -40px;
+    z-index: 30;
+    background: #d1e7dd;
+    border: 1px solid #badbcc;
+    width: 300px;
+    padding: 12px 20px;
+    text-align: center;
+    color: #0f5132;
+    border-radius: 5px;
+  }
+
+  &__failed {
+    position: relative;
+    top: -40px;
+    z-index: 30;
+    background: #f8d7da;
+    border: 1px solid #f5c2c7;
+    width: 300px;
+    padding: 12px 20px;
+    text-align: center;
+    color: #842029;
+    border-radius: 5px;
+  }
 }
 
 @media screen and (max-width: 1500px) {
