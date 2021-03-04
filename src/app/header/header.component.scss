@@ -181,6 +181,9 @@ header {
 }
 
 @media screen and (max-width: 650px) {
+  .top-panel {
+    margin: 0 40px 15px 40px !important;
+  }
   header {
     .header {
       &-container {
