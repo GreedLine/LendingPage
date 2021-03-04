@@ -1,13 +1,34 @@
+import {ModalActions, modalActions} from './modal.actions';
+
+export const modalNode = 'modal';
+
 export interface ModalState {
-    isOpen: boolean;
+    analysisIsOpen: boolean;
+    businessIsOpen: boolean;
+
 }
 
 const initialState: ModalState = {
-    isOpen: false,
+    analysisIsOpen: false,
+    businessIsOpen: false,
 };
 
 export const modalReducer = (
-    state = initialState, action
+    state = initialState, action: ModalActions
 ) => {
-    return state;
-}
+    switch (action.type) {
+        case modalActions.analysisToggle:
+            return {
+                ...state,
+                analysisIsOpen: !state.analysisIsOpen
+            };
+        case modalActions.businessToggle:
+            return {
+                ...state,
+                businessIsOpen: !state.businessIsOpen
+            };
+        default:
+            return state;
+
+    }
+};

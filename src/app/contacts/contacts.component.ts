@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {ModalState} from '../reducers/analysisModal/modal.reducer';
+import {AnalysisToggleAction, BusinessToggleAction} from '../reducers/analysisModal/modal.actions';
 
 @Component({
     selector: 'app-contacts',
@@ -7,18 +10,15 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-    constructor() {
+    constructor(private store$: Store<ModalState>) {
     }
 
-    form1 = false;
-    form2 = false;
-
-    toggleCommercialModal(): void {
-        this.form1 = !this.form1;
+    toggleBusinessModal(): void {
+        this.store$.dispatch(new BusinessToggleAction());
     }
 
     toggleAnalysisModal(): void {
-        this.form2 = !this.form2;
+        this.store$.dispatch(new AnalysisToggleAction());
     }
 
     ngOnInit(): void {

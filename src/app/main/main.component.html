@@ -1,6 +1,6 @@
 <main class="main" id="main">
     <div class="main__img">
-        <img src="/assets/img/main/picture.png" alt="image">
+        <img alt="image" src="/assets/img/main/picture.png">
     </div>
     <div class="main__content">
         <p class="main__title"><span class="_red-text">Формируем, управляем и поддерживаем</span> Вашу репутацию при
@@ -13,33 +13,32 @@
                     компании</p>
             </div>
             <div class="main__container">
-                <img src="/assets/img/main/02.png" alt="image" class="main__number">
+                <img alt="image" class="main__number" src="/assets/img/main/02.png">
             </div>
         </div>
         <div class="main__buttons">
-            <button id="main__analysis" (click)="toggleModal()">Получить</button>
+            <button (click)="toggleModal()" id="main__analysis">Получить</button>
             <div class="main__foot-description">
-                <div class="main__container"><img src="/assets/img/main/roob.png" alt="image" class="main__roob"></div>
+                <div class="main__container"><img alt="image" class="main__roob" src="/assets/img/main/roob.png"></div>
                 <p class="main__foot-info">Получите <b>бесплатный анализ репутации</b> вашей компании на почту в течение
                     3 часов</p>
             </div>
         </div>
     </div>
     <ul class="sidebar">
-        <a href="#header" class="sidebar__link">
+        <a class="sidebar__link" href="#header">
             <li class="sidebar__li">Главная</li>
         </a>
-        <a href="#main" class="sidebar__link">
+        <a class="sidebar__link" href="#main">
             <li class="sidebar__li _sidebar__active">Кто мы?</li>
         </a>
-        <a href="#partners" class="sidebar__link">
+        <a class="sidebar__link" href="#partners">
             <li class="sidebar__li">Партнёры</li>
         </a>
-        <a href="#contacts" class="sidebar__link">
+        <a class="sidebar__link" href="#contacts">
             <li class="sidebar__li">О нас</li>
         </a>
     </ul>
 </main>
 
-<app-modal-window *ngIf="toggle"></app-modal-window>
 

@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {ModalState} from '../reducers/analysisModal/modal.reducer';
+import {BusinessToggleAction} from '../reducers/analysisModal/modal.actions';
 
 @Component({
     selector: 'app-partners',
@@ -7,13 +10,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PartnersComponent implements OnInit {
 
-    constructor() {
+    constructor(private store$: Store<ModalState>) {
     }
 
-    toggle = false;
-
-    toggleModal() {
-        this.toggle = !this.toggle;
+    toggleModal(): void {
+        this.store$.dispatch(new BusinessToggleAction());
     }
 
     ngOnInit(): void {

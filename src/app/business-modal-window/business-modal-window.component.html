@@ -1,0 +1,12 @@
+<div class="modal__fade">
+    <div class="modal__window">
+        <button (click)="toggleModal()" class="modal__close">X</button>
+        <form (ngSubmit)="onSubmit()" action="" class="modal__form">
+            <h1 class="modal__h1">Заполните форму</h1>
+            <input [(ngModel)]="name" class="modal__input" name="name"  placeholder="Ваше имя" type="text">
+            <input [(ngModel)]="phone" class="modal__input" name="phone" placeholder="Номер телефона" type="text">
+            <input [(ngModel)]="mail" class="modal__input" name="mail" placeholder="Почта" type="text">
+            <input class="modal__submit" type="submit" value="Отправить">
+        </form>
+    </div>
+</div>

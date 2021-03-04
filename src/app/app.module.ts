@@ -7,14 +7,17 @@ import {MainComponent} from './main/main.component';
 import {PartnersComponent} from './partners/partners.component';
 import {ContactsComponent} from './contacts/contacts.component';
 import {FooterComponent} from './footer/footer.component';
-import {ModalWindowComponent} from './modal-window/modal-window.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {ModalWindowComponent} from './analysis-modal-window/modal-window.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgxMaskModule} from 'ngx-mask';
 import {StoreModule} from '@ngrx/store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {EffectsModule} from '@ngrx/effects';
 import {StoreRouterConnectingModule} from '@ngrx/router-store';
+import {metaReducers, reducers} from './reducers';
+import {BusinessModalWindowComponent} from './business-modal-window/business-modal-window.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
     declarations: [
@@ -24,17 +27,22 @@ import {StoreRouterConnectingModule} from '@ngrx/router-store';
         PartnersComponent,
         ContactsComponent,
         FooterComponent,
-        ModalWindowComponent
+        ModalWindowComponent,
+        BusinessModalWindowComponent,
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
         NgxMaskModule.forRoot(),
-        StoreModule.forRoot({}, {}),
+        StoreModule.forRoot(reducers, {
+            metaReducers
+        }),
         StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production}),
         EffectsModule.forRoot([]),
-        StoreRouterConnectingModule.forRoot()
+        StoreRouterConnectingModule.forRoot(),
+        FormsModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]

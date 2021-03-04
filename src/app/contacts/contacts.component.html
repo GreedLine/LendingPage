@@ -2,71 +2,42 @@
     <div class="contacts__container">
         <div class="contacts__information">
             <h1 class="contacts__title">Наша сила - ваше преимущество</h1>
-            <img src="/assets/img/contacts/line.png" alt="" class="contacts__line">
+            <img alt="" class="contacts__line" src="/assets/img/contacts/line.png">
             <p class="contacts__header-desc"><b>Адрес:</b> г. Челябинск, ул. Каслинская, 32</p>
             <p class="contacts__header-desc">Работаем с <b>9.00 до 18.00</b></p>
             <div class="contacts__ul">
-                <p class="contacts__li"><img src="/assets/img/contacts/mail.png" alt="" class="contacts__li-img">rise-orm@mail.ru
+                <p class="contacts__li"><img alt="" class="contacts__li-img" src="/assets/img/contacts/mail.png">rise-orm@mail.ru
                 </p>
-                <p class="contacts__li"><img src="/assets/img/contacts/phone.png" alt="" class="contacts__li-img">Руководитель
+                <p class="contacts__li"><img alt="" class="contacts__li-img" src="/assets/img/contacts/phone.png">Руководитель
                     отдела продаж: +7 (996) 235-99-19</p>
             </div>
         </div>
-        <img src="/assets/img/contacts/r.png" alt="" class="contacts__r">
+        <img alt="" class="contacts__r" src="/assets/img/contacts/r.png">
     </div>
     <div class="contacts__buttons">
         <div class="contacts__container _container-button">
-            <button class="contacts__button" (click)="toggleCommercialModal()">Получить</button>
+            <button (click)="toggleBusinessModal()" class="contacts__button">Получить</button>
             <p class="contacts__description">Получить коммерческое предложение уже <b>через 5 минут</b></p>
         </div>
         <div class="contacts__container _container-button">
-            <button class="contacts__button" (click)="toggleAnalysisModal()">Получить</button>
+            <button (click)="toggleAnalysisModal()" class="contacts__button">Получить</button>
             <p class="contacts__description _desc-right">Получить <b>бесплатный</b> анализ репутации вашей компании в
                 течение 3 часов</p>
         </div>
     </div>
-    <img src="/assets/img/contacts/4.png" alt="" class="contacts__4">
+    <img alt="" class="contacts__4" src="/assets/img/contacts/4.png">
     <ul class="sidebar">
-        <a href="#header" class="sidebar__link">
+        <a class="sidebar__link" href="#header">
             <li class="sidebar__li">Главная</li>
         </a>
-        <a href="#main" class="sidebar__link">
+        <a class="sidebar__link" href="#main">
             <li class="sidebar__li">Кто мы?</li>
         </a>
-        <a href="#partners" class="sidebar__link">
+        <a class="sidebar__link" href="#partners">
             <li class="sidebar__li">Партнёры</li>
         </a>
-        <a href="#contacts" class="sidebar__link">
+        <a class="sidebar__link" href="#contacts">
             <li class="sidebar__li _sidebar__active">О нас</li>
         </a>
     </ul>
-</div>
-
-<div class="modal__fade" *ngIf="form2">
-    <div class="modal__window">
-        <button class="modal__close" (click)="toggleAnalysisModal()">X</button>
-        <form action="" class="modal__form">
-            <h1 class="modal__h1">Заполните форму</h1>
-            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
-            <input type="text" placeholder="Название компании" name="nameCompany" class="modal__input">
-            <input type="text" placeholder="Сфера деятельности" name="object" class="modal__input">
-            <input type="text" placeholder="Город" name="city" class="modal__input">
-            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
-            <input type="text" placeholder="Почта" name="mail" class="modal__input">
-            <input type="submit" value="Отправить" class="modal__submit">
-        </form>
-    </div>
-</div>
-
-<div class="modal__fade" *ngIf="form1">
-    <div class="modal__window">
-        <button class="modal__close" (click)="toggleCommercialModal()">X</button>
-        <form action="" class="modal__form">
-            <h1 class="modal__h1">Заполните форму</h1>
-            <input type="text" placeholder="Ваше имя" name="name" class="modal__input">
-            <input type="text" placeholder="Номер телефона" name="phone" class="modal__input">
-            <input type="text" placeholder="Почта" name="mail" class="modal__input">
-            <input type="submit" value="Отправить" class="modal__submit">
-        </form>
-    </div>
 </div>

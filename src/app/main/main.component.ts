@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ModalState} from '../reducers/analysisModal/modal.reducer';
+import {Store} from '@ngrx/store';
+import {AnalysisToggleAction} from '../reducers/analysisModal/modal.actions';
 
 @Component({
     selector: 'app-main',
@@ -10,30 +12,14 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 export class MainComponent implements OnInit {
 
-    submitted = false;
-    analysisForm = new FormGroup({
-        name: new FormControl('', [Validators.required]),
-        company: new FormControl('', [Validators.required]),
-        work: new FormControl('', [Validators.required]),
-        city: new FormControl('', [Validators.required]),
-        telephone: new FormControl('', [Validators.required,]),
-        mail: new FormControl('', [Validators.required]),
-    });
-    toggle = false;
-
-    constructor() {
+    constructor(private store$: Store<ModalState>) {
     }
+
 
     toggleModal(): void {
-
-        this.toggle = !this.toggle;
+        this.store$.dispatch(new AnalysisToggleAction());
     }
 
-    onSubmit(): void {
-        this.submitted = true;
-        console.log('Success');
-        console.log(this.analysisForm);
-    }
 
     ngOnInit(): void {
     }
