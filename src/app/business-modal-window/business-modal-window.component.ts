@@ -29,7 +29,7 @@ export class BusinessModalWindowComponent implements OnInit {
 
     async onSubmit(): Promise<void> {
         this.submitted = true;
-        const url = 'http://localhost:5050/api/message/commercial';
+        const url = '/api/message/commercial';
         if (this.businessForm.controls.name.errors ||
             this.businessForm.controls.phone.errors ||
             this.businessForm.controls.email.errors

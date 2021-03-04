@@ -33,7 +33,7 @@ export class ModalWindowComponent implements OnInit {
 
     async onSubmit(): Promise<void> {
         this.submitted = true;
-        const url = 'http://localhost:5050/api/message/analysis';
+        const url = '/api/message/analysis';
         if (this.analysisForm.controls.name.errors ||
             this.analysisForm.controls.company.errors ||
             this.analysisForm.controls.sphere.errors ||

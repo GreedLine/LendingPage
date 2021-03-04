@@ -1,4 +1,4 @@
-<div class="modal__fade">
+<div (click)="toggleModal()" class="modal__fade">
     <div class="modal__window">
         <button (click)="toggleModal()" class="modal__close">X</button>
         <div *ngIf="(isSuccess)" class="modal__success">Заявка отправлена успешно!</div>
