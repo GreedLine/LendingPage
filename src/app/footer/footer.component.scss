@@ -23,6 +23,14 @@
     justify-content: flex-start;
     align-items: center;
   }
+
+  &__a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 
 @media screen and (max-width: 1500px) {

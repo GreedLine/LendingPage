@@ -17,7 +17,7 @@ import {EffectsModule} from '@ngrx/effects';
 import {StoreRouterConnectingModule} from '@ngrx/router-store';
 import {metaReducers, reducers} from './reducers';
 import {BusinessModalWindowComponent} from './business-modal-window/business-modal-window.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
     declarations: [

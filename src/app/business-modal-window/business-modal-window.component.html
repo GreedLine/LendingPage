@@ -1,6 +1,6 @@
 <div (click)="toggleModal()" class="modal__fade"></div>
 <div class="modal__window">
-    <button (click)="toggleModal()" class="modal__close">X</button>
+    <button (click)="toggleModal()" class="modal__close"><img src="/assets/img/modalWindow/cross.svg" alt="cross" class="modal__cross"></button>
     <div *ngIf="(isSuccess)" class="modal__success">Заявка отправлена успешно!</div>
     <div *ngIf="(isFailed)" class="modal__failed">У-упс! Что-то пошло не так...</div>
     <form (ngSubmit)="onSubmit()" [formGroup]="businessForm" action="" class="modal__form">

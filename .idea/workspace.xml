@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d2862ee2-3a0c-4484-b680-3b5fd18dee84" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/analysis-modal-window/modal-window.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/analysis-modal-window/modal-window.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/business-modal-window/business-modal-window.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/business-modal-window/business-modal-window.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contacts/contacts.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contacts/contacts.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/footer/footer.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/footer/footer.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main/main.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main/main.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BotORM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -87,7 +95,15 @@
       <workItem from="1614506442644" duration="20456000" />
       <workItem from="1614534543191" duration="2348000" />
       <workItem from="1614611895121" duration="24785000" />
-      <workItem from="1614872188420" duration="9061000" />
+      <workItem from="1614872188420" duration="9657000" />
+      <workItem from="1616387367089" duration="251000" />
+      <workItem from="1617435176802" duration="2179000" />
+      <workItem from="1618235787115" duration="1093000" />
+      <workItem from="1620041231328" duration="250000" />
+      <workItem from="1620113102629" duration="2265000" />
+      <workItem from="1620151366591" duration="5215000" />
+      <workItem from="1620467826196" duration="47000" />
+      <workItem from="1621424332221" duration="1335000" />
     </task>
     <servers />
   </component>
