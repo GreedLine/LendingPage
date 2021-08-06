@@ -1,1 +1,8 @@
-{}
+{
+  "menu": {
+    "main": "Main",
+    "who": "Who we are?",
+    "partners": "Main partners",
+    "aboutUs": "About us"
+  }
+}

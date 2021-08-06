@@ -30,15 +30,18 @@ header {
       flex-direction: row;
       align-items: center;
       margin-right: 20px;
+      list-style-type: none;
+      padding: 0;
     }
 
     &__eng, &__rus {
       font-size: 13px;
       font-weight: 600;
+      cursor: pointer;
     }
 
     ._inactive-language {
-      padding: 8px 2px 8px 12px;
+      padding: 8px 12px 8px 12px;
       color: #BE1E2D;
     }
 
@@ -113,9 +116,10 @@ header {
   font-style: normal;
   font-weight: bold;
   line-height: 29px;
-  text-align: justify;
+  text-align: left;
   color: #fff;
   z-index: 50;
+  width: 400px;
 
   &__ul {
     list-style-type: none;

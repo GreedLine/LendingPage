@@ -3,10 +3,10 @@
     <div class="top-panel">
         <div class="top-panel__logo"><img alt="image" src="/assets/img/header/logo.svg"></div>
         <div class="top-panel__menu">
-            <div *ngIf="false" class="top-panel__language">
-                <div class="top-panel__eng _inactive-language">ENG</div>
-                <div class="top-panel__rus _active-language">RU</div>
-            </div>
+            <ul class="top-panel__language">
+                <li class="top-panel__eng {{eng}}" (click)="changeLanguageToEnglish()">ENG</li>
+                <li class="top-panel__rus {{rus}}" (click)="changeLanguageToRussian()">RU</li>
+            </ul>
             <div class="top-panel__r"><img alt="image" src="/assets/img/header/R.svg"></div>
         </div>
     </div>
@@ -23,16 +23,16 @@
         <nav class="nav">
             <ul class="nav__ul">
                 <a class="nav__link" href="#header">
-                    <li class="nav__li">Главная</li>
+                    <li class="nav__li">{{'menu.main' | transloco}}</li>
                 </a>
                 <a class="nav__link" href="#main">
-                    <li class="nav__li">Кто мы?</li>
+                    <li class="nav__li">{{'menu.who' | transloco}}</li>
                 </a>
                 <a class="nav__link" href="#partners">
-                    <li class="nav__li">Ключевые партнёры</li>
+                    <li class="nav__li">{{'menu.partners' | transloco}}</li>
                 </a>
                 <a class="nav__link" href="#contacts">
-                    <li class="nav__li">О нас</li>
+                    <li class="nav__li">{{'menu.aboutUs' | transloco}}</li>
                 </a>
             </ul>
         </nav>
