@@ -18,6 +18,7 @@ import {StoreRouterConnectingModule} from '@ngrx/router-store';
 import {metaReducers, reducers} from './reducers';
 import {BusinessModalWindowComponent} from './business-modal-window/business-modal-window.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 @NgModule({
     declarations: [
@@ -42,7 +43,8 @@ import {HttpClientModule} from '@angular/common/http';
         EffectsModule.forRoot([]),
         StoreRouterConnectingModule.forRoot(),
         FormsModule,
-        HttpClientModule
+        HttpClientModule,
+        TranslocoRootModule
     ],
     providers: [],
     bootstrap: [AppComponent]
