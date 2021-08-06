@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2862ee2-3a0c-4484-b680-3b5fd18dee84" name="Default Changelist" comment="Update build &amp;&amp; add politic file." />
+    <list default="true" id="d2862ee2-3a0c-4484-b680-3b5fd18dee84" name="Default Changelist" comment="Update build &amp;&amp; add politic file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1oX918XIF9xEFtAtfRyatGj9rTP" />
@@ -103,6 +111,7 @@
       <workItem from="1620151366591" duration="5215000" />
       <workItem from="1620467826196" duration="47000" />
       <workItem from="1621424332221" duration="1650000" />
+      <workItem from="1628237444326" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="Update.">
       <created>1621425792016</created>
